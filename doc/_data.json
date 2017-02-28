@@ -229,7 +229,7 @@
                                 }
                             },
                             {
-                                "section": "<h4>Use any web browser to simply test the REST API in the tutorial scenario",
+                                "section": "<h4>Use any web browser to simply test the REST API",
                                 "steps": {
                                     "type": "ordered",
                                     "details": [
