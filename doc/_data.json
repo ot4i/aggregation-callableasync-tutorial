@@ -109,16 +109,16 @@
                     "sections": 
 					[
                         {
-                            "section": "When you click Import, one REST API and two applications will be created in your workspace: <span class='application'>AggregationCallableAsync</span>, <span class='application'>AggregationCallableAsyncBackend1</span> and <span class='application'>AggregationCallableAsyncBackend2</span>."
+                            "section": "When you click Import, one REST API and two applications will be created in your workspace:"
                         },
                         {
-                            "section": "<span class='application'>AggregationCallableAsync</span> provides a single GET operation on a resource named AggregationResponse. The subflow representation of the operation, getAggregatedResponse.subflow, uses CallableFlowAsyncInvoke nodes to fan-out two requests. Two CallableFlowAsynResponse nodes are used to fan-in reply messages from the back-end message flows." 
+                            "section": "The REST API <span class='application'>AggregationCallableAsync</span> provides a single GET operation on a resource named AggregationResponse. The subflow representation of the operation, <span class='application'>getAggregatedResponse.subflow</span>, uses CallableFlowAsyncInvoke nodes to fan-out two requests. Two CallableFlowAsyncResponse nodes are used to fan-in reply messages from the back-end message flows." 
                         },
                         {
-                            "section": "<span class='application'>AggregationCallableAsyncBackend1</span> provides a single message flow with CallableInput, Mapping and CallableReply nodes."
+                            "section": "The Application <span class='application'>AggregationCallableAsyncBackend1</span> provides a single message flow with CallableInput, Mapping and CallableReply nodes."
                         },
                         {
-                            "section": "<span class='application'>AggregationCallableAsyncBackend2</span> provides a single message flow with CallableInput, Mapping and CallableReply nodes."
+                            "section": "The Application <span class='application'>AggregationCallableAsyncBackend2</span> provides a single message flow with CallableInput, Mapping and CallableReply nodes."
                         },
 			{
 			    "section": "For simplicity, the REST API and two back-end applications can all be deployed to the same integration server. If you wish, you could deploy AggregationCallableAsyncBackend1 and AggregationCallableAsyncBackend2 to different integration servers (assuming you configure an IIB Switch component to link the callable flows)."
