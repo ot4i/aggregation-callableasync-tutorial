@@ -252,10 +252,13 @@
                                         "details": 
 								        [
                                         {
-                                          "details": "In the address bar of the browser paste in the URL for the HTTP GET operation. If you are using default configuration settings, this is likely to be: http://localhost:7080/aggregationcallableasync/v1/AggregatedResponse?Field1=value1&Field2=value2"
+                                          "details": "In the address bar of the browser paste in the URL for the HTTP GET operation. If you have used default settings, then this is likely to be:"
                                         },
                                         {
-                                            "details": "Note that this URL includes 2 query parameters with the values <span class='resource'>value1</span> and <span class='resource'>value2</span>. One of these values will be sent to each back-end flow. The back end flows will uppercase the values and reply."
+                                          "details": "http://localhost:7080/aggregationcallableasync/v1/AggregatedResponse?Field1=value1&Field2=value2"
+                                        },
+                                        {
+                                          "details": "Note that this URL includes query parameters with the values <span class='resource'>value1</span> and <span class='resource'>value2</span>. One of these values will be sent to each back-end flow. The back end flows will uppercase the values and reply."
                                         }
                                         ]
                                         }
