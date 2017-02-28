@@ -72,13 +72,13 @@
                 "sections": 
 				[
                     {
-                        "section": "This tutorial demonstrates a simple REST API that receives an HTTP GET, and fans-out two separate asynchronous Callable Flow invocations (after simple transformations using a Mapping node). Two separate example back-end message flows are provided which read these MQ requests and reply to a common response queue. Finally, a separate fan-in message flow aggregates the two response messages."
+                        "section": "This tutorial demonstrates a simple REST API that receives an HTTP GET, and fans-out two separate asynchronous Callable Flow invocations (after simple transformations using a Mapping node). Two separate example back-end message flows are provided which receive these requests, do a trivial transformation to upper-case the data, and reply. The fan-in part of the REST API aggregates values from the two response messages together."
                     },
                     {
                         "section": "This tutorial requires an IIB node which is associated with a local queue manager."
                     },
                     {
-                        "section": "In IBM Integration Bus, an application is a container for all the resources that are required to create a solution. A REST API is a specialized form of an application which describes a set of resources, and a set of operations that can be called on those resources from any HTTP client. This tutorial provides a REST API which holds the fan-out and fan-in aggregation flows, and two other applications for the back-end callable flows."
+                        "section": "In IBM Integration Bus, an application is a container for all the resources that are required to create a solution. A REST API is a specialized form of an application which describes a set of resources, and a set of operations that can be called on those resources from any HTTP client. This tutorial provides a REST API which holds the fan-out / fan-in aggregation flow, and two other applications for the back-end callable flows."
                     }
                 ]
             },
@@ -162,7 +162,7 @@
                     "sections": 
 		     [
                 {
-                     "section":"The solution uses WebSphere MQ queues to route messages between the applications.",
+                     "section":"Although this solution uses Callable Flows to route messages between the REST API and applications, the aggregation nodes require MQ queues to operate.",
                      "steps":{
                         "type":"ordered",
                         "details":[
@@ -176,17 +176,6 @@
                                     },
                                     {
                                        "details":"In the console window, type the following command:<br><code>server\\sample\\wmq\\iib_createqueues <span class='varname'>qmgr</span></code><br>where<br><span class='varname'>qmgr</span> is the queue manager name."
-                                    }
-                                 ]
-                              }
-                           },
-                           {
-                              "details":"Create the queues used by the MQ nodes in this tutorial by completing the following steps:",
-                              "substeps":{
-                                 "type":"ordered",
-                                 "details":[
-                                    {
-                                       "details":"In the console window, type the following command:<br><code><span class='cmdname'>runmqsc</span> <span class='varname'> qmgr {WorkspacePath}/AggregationMQ/create_queues.mqsc</span></code><br>where<br><span class='varname'>qmgr</span> is the queue manager name and <span class='varname'>WorkspacePath</span> is the location of your current Toolkit workspace."
                                     }
                                  ]
                               }
