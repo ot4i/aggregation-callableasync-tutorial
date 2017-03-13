@@ -32,8 +32,8 @@
 	{
         "_common": 
 		{
-            "name": "Using the Aggregation nodes in a message flow, with Callable Flows for back-end services",
-            "shortDescription": "Learn how to use the Aggregation nodes to fan-out and fan-in messages using Asynchronous Callable Flows.",
+            "name": "Aggregation nodes using CallableFlowAsyncInvoke nodes with back-end services",
+            "shortDescription": "Learn how to use the Aggregation nodes to fan-out and fan-in messages using asynchronous Callable Flow nodes.",
             "durationText": "This tutorial takes approximately",
             "durationTime": "5 minutes",
             "_resourceToOpenComment": "The ID of the first resource to open when the user imports the tutorial. Resource IDs are defined in the repo_metadata.json Tutorials listing on ot4i.",
